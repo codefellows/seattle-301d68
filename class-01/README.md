@@ -4,12 +4,13 @@
 
 Today we will be covering some new topics and reviewing concepts you should already be familiar with. For students who completed Code 201, today should be a review of CSS floats.
 
-We will spend some time reviewing the concepts from the lab 00 assignments.
+We will spend some time reviewing the concepts from the lab 00 assignments. We will also discuss several new and very important topics, including state, scope, and the "new" keyword.
 
 ## Daily Plan
 
 - Overview of 301
 - Review of lab 00 assignments
+- Discussion of context, scope, "this", and "new"
 - Review of CSS floats
 - Introduction to code challenges
 - Introduction of Code Challenge topic

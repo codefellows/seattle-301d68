@@ -1,0 +1,28 @@
+header {
+  background: black;
+  color: white;
+}
+
+main {
+  border: solid 1px black;
+}
+
+footer {
+  background: orange;
+}
+
+/* the min-width concept helps present the idea of MOBILE FIRST */
+
+@media (min-width: 960px) {
+  body {
+    background: red;
+  }
+
+  footer {
+    background: green;
+  }
+
+  section {
+    font-size: 40px;
+  }
+}
