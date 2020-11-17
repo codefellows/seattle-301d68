@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- "head" component (aka partial) -->
+    <%- include('../layout/head') %>
+  </head>
+  <body>
+    <header>
+      <%- include('../layout/header') %>
+    </header>
+
+    <main>
+      <h2>Create a New Task:</h2>
+      <form action="/add" method="post">
+        <input type="text" name="title" placeholder="task title">
+        <textarea name="description" placeholder="task details"></textarea>
+        <input type="text" name="category" placeholder="task category">
+        <input type="text" name="contact" placeholder="enter task contact">
+        <button type="submit">Add Task!</button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- "head" component (aka partial) -->
+    <%- include('../layout/head') %>
+  </head>
+  <body>
+    <header>
+      <%- include('../layout/header') %>
+    </header>
+    <main>
+      <h4>Title: <%= task.title %></h4>
+      <p>Desc: <%= task.description %></p>
+      <p>Owned By: <%= task.contact %></p>
+      <p>Category: <%= task.category %></p>
+      <p>Due: <%= task.due %></p>
+    </main>
+  </body>
+</html>
