@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('./layout/head') %>
+  </head>
+  <body>
+    <header>
+      <%- include('./layout/header') %>
+    </header>
+    <main>
+      <ul>
+        <% results.forEach(task => { %>
+          <li class="task-item" data-id="<%= task.id %>">
+            <h4>Task: <%= task.title %></h4>
+            <p>Description: <%= task.description %></p>
+            <p>Owned by: <%= task.contact %></p>
+            <a href="/tasks/<%= task.id %>">View Task Details</a>
+          </li>
+        <% }) %>
+      </ul>
+    </main>
+  </body>
+</html>

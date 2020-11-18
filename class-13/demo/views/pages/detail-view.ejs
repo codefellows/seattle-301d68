@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- "head" component (aka partial) -->
+    <%- include('../layout/head') %>
+  </head>
+  <body>
+    <header>
+      <%- include('../layout/header') %>
+    </header>
+    <main>
+      <section class="update-task">
+        <form action="/update/<%= task.id %>?_method=PUT" method="post">
+          <input type="text" name="title" value="<%= task.title %>">
+          <textarea name="description"><%= task.description %></textarea>
+          <input type="text" name="contact" value="<%= task.contact %>">
+          <input type="text" name="category" value="<%= task.category %>">
+          <button type="submit">Update Task!</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
